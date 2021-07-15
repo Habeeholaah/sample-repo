@@ -1,0 +1,46 @@
+﻿
+
+@{
+    ViewData["Title"] = "Student Page";
+}
+
+@model STUDENTPORTAL.HomeController
+
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="header">
+                <h4 class="title">Student Information Table </h4>
+
+            </div>
+            <div class="content table-responsive table-full-width">
+                <table data-url=@Url.Action("GetCustomer", "Home") class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th data-field="firstName">First Name</th>
+                            <th data-field="lastName">Last Name</th>
+                            <th data-field="dateofBirth">Date of Birth</th>
+                            <th data-field="address">Address</th>
+                            <th data-field="sex">Sex</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+
+
+
